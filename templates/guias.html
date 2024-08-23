@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalhes das Guias</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Guias</h1>
+    {% for guia in guias %}
+    <div class="guia">
+        <h2>Número da Guia: <a href="{{ url_for('detalhes_guia', posicao=guia.posicao) }}">{{ guia.numeroGuia }}</a></h2>
+        <p>Nome do Beneficiário: {{ guia.nome_beneficiario }}</p>
+        <p>Valor da Guia: {{ guia.valor_total }}</p>
+    </div>
+    {% endfor %}
+
+    <div class="total">
+        <h3>Total de Valores:</h3>
+        <p>{{ total_valor }}</p>
+    </div>
+</body>
+</html>

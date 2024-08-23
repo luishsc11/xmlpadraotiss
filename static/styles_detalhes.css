@@ -1,0 +1,43 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    color: #333;
+    margin: 50px;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: 10px solid #ccc;
+}
+
+.guia-detail {
+    border-bottom: 1px solid #ccc;
+    padding: 20px 0;
+}
+
+.guia-detail h1 {
+    color: #007bff;
+    margin-bottom: 5px;
+}
+
+.guia-detail p {
+    margin: 5px 0;
+}
+
+.valor-total {
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #ccc;
+}
+
+.valor-total p {
+    margin: 5px 0;
+    font-weight: 300;
+    color: #007bff;
+}

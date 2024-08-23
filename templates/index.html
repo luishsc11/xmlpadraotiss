@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Importação de XML</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles_index.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Importar XML - Padrão TISS</h1>
+        <form action="/import_xml" method="post" enctype="multipart/form-data">
+            <input type="file" name="xml_file" id="xml_file" accept=".xml" required>
+            <button type="submit">Importar</button>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalhes da Guia</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles_detalhes.css') }}">
+</head>
+<body>
+    <h1>Detalhes da Guia</h1>
+
+    <div class="guia-detail">
+        <p><strong>Número da Guia:</strong> {{ xml_guia.numeroGuia }}</p>
+        <p><strong>Nome do Beneficiário:</strong> {{ xml_guia.nome_beneficiario }}</p>
+        <p><strong>Valor Total:</strong> {{ xml_guia.valor_total }}</p>
+    </div>
+
+    <div class="xml-content">
+        <h2>Conteúdo XML:</h2>
+        <pre>{{ xml_guia.xml_guia }}</pre>
+    </div>
+</body>
+</html>
